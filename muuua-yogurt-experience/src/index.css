@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: 'Fredoka', sans-serif;
+  --font-body: 'Quicksand', sans-serif;
+  --color-primary: #ff7eb3;
+  --color-secondary: #7afcff;
+  --color-accent: #feff9c;
+  --color-bg: #fff9f2;
+  --color-text: #2d232e;
+  --border-radius: 24px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+}
+
+/* Patrones y texturas orgánicas para el yogurt */
+.texture-creamy {
+  background-image: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.65) 0%, transparent 60%);
+}
+
+.texture-crunchy {
+  background-image: 
+    radial-gradient(rgba(92, 58, 33, 0.35) 2px, transparent 2px),
+    radial-gradient(rgba(218, 165, 32, 0.45) 3px, transparent 3px);
+  background-size: 14px 14px;
+  background-position: 0 0, 7px 7px;
+}
+
+.texture-liquid {
+  background-image: linear-gradient(135deg, rgba(255,255,255,0.45) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.45) 50%, rgba(255,255,255,0.45) 75%, transparent 75%, transparent);
+  background-size: 24px 24px;
+}
+
+.texture-gelatinous {
+  box-shadow: inset 0 4px 12px rgba(255,255,255,0.8), inset 0 -4px 10px rgba(0,0,0,0.12);
+}
+
+.texture-foamy {
+  background-image: radial-gradient(circle, rgba(255,255,255,0.85) 20%, transparent 25%);
+  background-size: 10px 10px;
+}
+
+.texture-swirl {
+  background-image: repeating-radial-gradient(circle at 50% 50%, rgba(255,255,255,0.3) 0, rgba(255,255,255,0.3) 4px, transparent 4px, transparent 10px);
+}
+
+/* Scrollbar artesanal */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fdf2e9;
+}
+::-webkit-scrollbar-thumb {
+  background: #e2b6cf;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d18eb4;
+}
